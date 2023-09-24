@@ -11,7 +11,7 @@ import SwiftUI
 struct CatchPokemonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CreaturesListView()
         }
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15CFBB0F2AC0734900761E63 /* CatchPokemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBB0E2AC0734900761E63 /* CatchPokemonApp.swift */; };
-		15CFBB112AC0734900761E63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBB102AC0734900761E63 /* ContentView.swift */; };
+		15CFBB112AC0734900761E63 /* CreaturesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBB102AC0734900761E63 /* CreaturesListView.swift */; };
 		15CFBB132AC0734A00761E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBB122AC0734A00761E63 /* Assets.xcassets */; };
 		15CFBB162AC0734A00761E63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBB152AC0734A00761E63 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		15CFBB0B2AC0734900761E63 /* CatchPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CFBB0E2AC0734900761E63 /* CatchPokemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchPokemonApp.swift; sourceTree = "<group>"; };
-		15CFBB102AC0734900761E63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15CFBB102AC0734900761E63 /* CreaturesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesListView.swift; sourceTree = "<group>"; };
 		15CFBB122AC0734A00761E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CFBB152AC0734A00761E63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				15CFBB0E2AC0734900761E63 /* CatchPokemonApp.swift */,
-				15CFBB102AC0734900761E63 /* ContentView.swift */,
+				15CFBB102AC0734900761E63 /* CreaturesListView.swift */,
 				15CFBB122AC0734A00761E63 /* Assets.xcassets */,
 				15CFBB142AC0734A00761E63 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CFBB112AC0734900761E63 /* ContentView.swift in Sources */,
+				15CFBB112AC0734900761E63 /* CreaturesListView.swift in Sources */,
 				15CFBB0F2AC0734900761E63 /* CatchPokemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
