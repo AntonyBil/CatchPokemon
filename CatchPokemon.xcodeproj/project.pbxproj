@@ -60,11 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				15CFBB0E2AC0734900761E63 /* CatchPokemonApp.swift */,
-				15FB2F282AC204E40067CCB0 /* Creature.swift */,
-				15CFBB102AC0734900761E63 /* CreaturesListView.swift */,
-				15CFBB1C2AC0889F00761E63 /* CreaturesViewModel.swift */,
-				15FB2F2A2AC2120E0067CCB0 /* CreatureDetailViewModel.swift */,
-				15FB2F262AC1FCEA0067CCB0 /* DetailView.swift */,
+				15FB2F2E2AC219FB0067CCB0 /* Model */,
+				15FB2F2C2AC219AF0067CCB0 /* View */,
+				15FB2F2D2AC219C90067CCB0 /* ViewModel */,
 				15CFBB122AC0734A00761E63 /* Assets.xcassets */,
 				15CFBB142AC0734A00761E63 /* Preview Content */,
 			);
@@ -77,6 +75,32 @@
 				15CFBB152AC0734A00761E63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15FB2F2C2AC219AF0067CCB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15CFBB102AC0734900761E63 /* CreaturesListView.swift */,
+				15FB2F262AC1FCEA0067CCB0 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15FB2F2D2AC219C90067CCB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15CFBB1C2AC0889F00761E63 /* CreaturesViewModel.swift */,
+				15FB2F2A2AC2120E0067CCB0 /* CreatureDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		15FB2F2E2AC219FB0067CCB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15FB2F282AC204E40067CCB0 /* Creature.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
