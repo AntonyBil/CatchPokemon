@@ -12,7 +12,7 @@ class CreatureViewModel: ObservableObject {
     
     private struct Returned: Codable {
         var count: Int
-        var next: String        //TODO: We'll change this to an optional later
+        var next: String?        //TODO: We'll change this to an optional later
         var results: [Creature]
     }
     
@@ -40,8 +40,8 @@ class CreatureViewModel: ObservableObject {
                 return
             }
             self.count = returned.count
-            self.urlString = returned.next
-            self.creaturesArray = returned.results
+            self.urlString = returned.next ?? ""
+            self.creaturesArray = self.creaturesArray + returned.results
         } catch {
             print("ERROR: Could not user URL at \(urlString) to get data and response")
         }
