@@ -25,25 +25,8 @@ struct DetailView: View {
                 .padding(.bottom)
             
             HStack {
-                AsyncImage(url: URL(string: creatureDetailVM.imageURL)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .background(.white)
-                        .frame(width: 96, height: 96)
-                        .cornerRadius(16)
-                        .shadow(radius: 8, x: 5, y: 5)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 16)
-                                .stroke(.gray.opacity(0.5), lineWidth: 1)
-                        }
-                        .padding(.trailing)
-               } placeholder: {
-                    Rectangle()
-                       .foregroundColor(.clear)
-                       .frame(width: 96, height: 96)
-                       .padding(.trailing)
-               }
+                
+              creatureImage
                 
                 VStack(alignment:.leading) {
                     HStack(alignment: .top) {
@@ -76,6 +59,49 @@ struct DetailView: View {
         }
     }
     
+}
+
+extension DetailView {
+    var creatureImage: some View {
+        AsyncImage(url: URL(string: creatureDetailVM.imageURL)) { phase in
+            if let image = phase.image {    //We have a valid image
+                let _ = print("VALID IMAGE !!!")
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .background(.white)
+                    .frame(width: 96, height: 96)
+                    .cornerRadius(16)
+                    .shadow(radius: 8, x: 5, y: 5)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(.gray.opacity(0.5), lineWidth: 1)
+                    }
+                    .padding(.trailing)
+            } else if phase.error != nil {  //We have an error
+                let _ = print("!!! ERROR LOADING IMAGE !!!")
+                Image(systemName: "questionmark.square.dashed")
+                    .resizable()
+                    .scaledToFit()
+                    .background(.white)
+                    .frame(width: 96, height: 96)
+                    .cornerRadius(16)
+                    .shadow(radius: 8, x: 5, y: 5)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(.gray.opacity(0.5), lineWidth: 1)
+                    }
+                    .padding(.trailing)
+            } else {    //Use a placeholder
+                let _ = print("Placeholder IMAGE")
+                Rectangle()
+                   .foregroundColor(.clear)
+                   .frame(width: 96, height: 96)
+                   .padding(.trailing)
+            }
+        }
+        
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
